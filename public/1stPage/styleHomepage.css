@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgba(165, 165, 165, 0.06); */
+    background-image: url('./images/backMountain1.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(38, 34, 42, 0.5); 
+    /* opacity: 0.5; */
+    /* #2e242a; */
+    /* #5d4954; */
+    /* #60566b; */
+    
+    
+}
+
+.theNav {
+    color: rgba(226, 226, 226, 1.0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+      
+}
+
+.theNav:hover{
+    cursor: context-menu;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none; /* to remove dots from li elements */
+
+}
+
+.nav-links a {
+    color: rgba(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* .burger{
+    display: none;
+} */
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;  
+    font-size: 3vw;
+    margin: 50px;  
+    
+}
+
+header h1 {
+    color: rgb(226, 226, 226);
+}
+
+#liveClock {
+    position: fixed;     
+    text-align: center;    
+    bottom: 7%; 
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(223, 17, 120, 0.2);
+    color: rgb(226, 226, 226);
+  }
+
+
+@media screen and (max-width: 1350px){
+    .nav-links{
+        width: 33%;
+    }
+
+}
+
+/* @media screen and (max-width: 1135px){
+    
+    header h1 {
+        font-size: 45px;
+    }
+} */
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .burger{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #2e242a; /* #5D4954; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        /* transition: transform 0.5s ease-in; */
+    }
+
+   
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(38, 34, 42, 0.5);
+        /* #60566b; */
+        /* #2e242a; #5D4954;  */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+    }
+    
+
+    .nav-links li{
+        opacity: 80;
+        }
+
+    header h1{
+        display: flex;
+        flex-flow:column nowrap;
+        
+    }
+    
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+

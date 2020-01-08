@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Login Page </title>
+</head>
+<body>
+    <div class="wrapper animated bounce">
+        <h1> Create Account </h1>
+        <hr>
+        <form id="form" action="/" method="GET">  
+            <label for="username" class="icon"> <i class="fa fa-user"></i> </label>
+            <input id="username" name="username" type="text" placeholder="Username">
+            <label for="password" class="icon"> <i class="fa fa-key"></i> </label>
+            <input id="password" name="password" type="password" placeholder="Password">
+            <label for="email" class="icon"> <i class="fa fa-envelope"></i> </label>
+            <input id="email" name="email" type="email" placeholder="E-mail">
+            <label for="tel" class="icon"> <i class="fa fa-phone"></i> </label>
+            <input type="tel" name="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="Phone number"><br>
+            
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other <br> <br>
+            
+            <input type="range" name="points" min="10" max="169" id="range"> Neinteres site <br> <br>
+
+            <button type="submit">Register</button>
+        <hr>
+        <div class="crtacc"><a href="../5thPage/index5.html">Back to Log In</a></div>
+        <div class="crtacc2"><a href="../index.html">Home</a></div>
+        </form>
+        <div id="error"></div>
+    </div>
+      
+    <script src="scriptPage6.js"></script>
+</body>
+</html>

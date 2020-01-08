@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    /* background: linear-gradient(45deg, rgba(41, 41, 41, 0.02) 0%, rgba(41, 41, 41, 0.02) 31%,rgba(24, 24, 24, 0.02) 31%, rgba(24, 24, 24, 0.02) 100%),linear-gradient(45deg, rgba(183, 183, 183, 0.08) 0%, rgba(183, 183, 183, 0.08) 69%,rgba(25, 25, 25, 0.08) 69%, rgba(25, 25, 25, 0.08) 100%),linear-gradient(0deg, rgba(205, 205, 205, 0.06) 0%, rgba(205, 205, 205, 0.06) 52%,rgba(110, 110, 110, 0.06) 52%, rgba(110, 110, 110, 0.06) 100%),linear-gradient(45deg, rgba(87, 87, 87, 0.1) 0%, rgba(87, 87, 87, 0.1) 24%,rgba(229, 229, 229, 0.1) 24%, rgba(229, 229, 229, 0.1) 100%),linear-gradient(0deg, rgba(12, 12, 12, 0.03) 0%, rgba(12, 12, 12, 0.03) 39%,rgba(207, 207, 207, 0.03) 39%, rgba(207, 207, 207, 0.03) 100%),linear-gradient(135deg, rgba(174, 174, 174, 0.04) 0%, rgba(174, 174, 174, 0.04) 73%,rgba(134, 134, 134, 0.04) 73%, rgba(134, 134, 134, 0.04) 100%),linear-gradient(0deg, rgba(105, 105, 105, 0.06) 0%, rgba(105, 105, 105, 0.06) 8%,rgba(203, 203, 203, 0.06) 8%, rgba(203, 203, 203, 0.06) 100%),linear-gradient(90deg, rgb(134, 134, 134),rgb(231, 231, 231)); */
+    background: linear-gradient(45deg, #FFF 0%,transparent 100%),linear-gradient(90deg, #FFF 0%,transparent 100%),linear-gradient(135deg, rgba(111, 111, 111, 0.01) 0%, rgba(111, 111, 111, 0.01) 24%,rgba(104, 104, 104, 0.01) 24%, rgba(104, 104, 104, 0.01) 100%),linear-gradient(45deg, rgba(143, 143, 143, 0.03) 0%, rgba(143, 143, 143, 0.03) 78%,rgba(8, 8, 8, 0.03) 78%, rgba(8, 8, 8, 0.03) 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 73%,rgba(254, 254, 254, 0.04) 73%, rgba(254, 254, 254, 0.04) 100%),linear-gradient(135deg, rgba(165, 165, 165, 0.06) 0%, rgba(165, 165, 165, 0.06) 64%,rgba(85, 85, 85, 0.06) 64%, rgba(85, 85, 85, 0.06) 100%),linear-gradient(0deg, rgba(219, 219, 219, 0.08) 0%, rgba(219, 219, 219, 0.08) 55%,rgba(0, 0, 0, 0.08) 55%, rgba(0, 0, 0, 0.08) 100%),linear-gradient(135deg, rgba(234, 234, 234, 0.03) 0%, rgba(234, 234, 234, 0.03) 23%,rgba(40, 40, 40, 0.03) 23%, rgba(40, 40, 40, 0.03) 100%),linear-gradient(135deg, rgba(197, 197, 197, 0.06) 0%, rgba(197, 197, 197, 0.06) 70%,rgba(168, 168, 168, 0.06) 70%, rgba(168, 168, 168, 0.06) 100%),linear-gradient(45deg, rgba(205, 205, 205, 0.07) 0%, rgba(205, 205, 205, 0.07) 72%,rgba(183, 183, 183, 0.07) 72%, rgba(183, 183, 183, 0.07) 100%),linear-gradient(135deg, rgba(124, 124, 124, 0.06) 0%, rgba(124, 124, 124, 0.06) 85%,rgba(71, 71, 71, 0.06) 85%, rgba(71, 71, 71, 0.06) 100%),linear-gradient(90deg, rgb(161, 161, 161),rgb(167, 167, 167));
+}
+
+.musicApp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+.homeBtn {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+
+}
+
+.homeBtn a{
+  color: rgb(115, 115, 115);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+    
+}
+
+.pads {
+  /* background-color: ligtblue; */
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  height: 10em;
+  width: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background:  linear-gradient(135deg, rgb(68, 202, 201) 0%,rgb(252, 255, 114) 100%);
+}
+.pad2 {
+  background: linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
+}
+.pad3 {
+  background:linear-gradient(135deg, rgb(112, 84, 203),rgb(232, 47, 180));
+}
+.pad4 {
+  background: linear-gradient(350deg, rgb(171, 118, 76),rgb(235, 193, 30));
+}
+.pad5 {
+  background: linear-gradient(135deg, rgb(32, 186, 230),rgb(110, 6, 173));
+}
+.pad6 {
+  background: linear-gradient(135deg, rgb(51, 138, 249),rgb(47, 248, 255));
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+
+}
